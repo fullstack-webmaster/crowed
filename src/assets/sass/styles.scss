@@ -1,0 +1,84 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~leaflet/dist/leaflet.css';
+
+body {
+  background: #f2f2f2;
+}
+
+.dropdown {
+  .btn {
+    font-size: 14px;
+  }
+}
+
+.card-header-title {
+  color: #fff;
+}
+
+.card-header {
+  background: #67c8db;
+  color: #fff;
+
+  > span > a {
+    color: #fff;
+  }
+}
+
+.card {
+  .custom-select {
+    font-size: 14px;
+  }
+}
+
+.navbar {
+  padding: 0;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-nav {
+  .nav-item {
+    padding: 0 25px;
+
+    a.nav-link {
+      font-size: 14px;
+      padding: 15px 0;
+    }
+
+    &.active {
+      a.nav-link {
+        color: #666;
+        border-bottom: 3px solid #67c8db;
+      }
+    }
+  }
+}
+
+.tooltip {
+  opacity: 1 !important;
+}
+
+* {
+  font-family: 'Lato', serif;
+  color: #666;
+}
+
+.diversity-list {
+  > li {
+    > a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.legend-action {
+  cursor: pointer;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
