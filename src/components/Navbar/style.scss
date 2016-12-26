@@ -1,0 +1,59 @@
+.logged-indicator {
+  font-size: 11px;
+  white-space: nowrap;
+
+  .username {
+    color: #67c8db;
+    font-weight: bold;
+  }
+
+  a {
+    color: #666;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 1;
+  padding: 0;
+  border-top: 3px solid #67c8db;
+  margin-top: -3px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+
+  .dropdown-item:hover {
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.dropdown-item {
+  margin: 0;
+  padding: 0 !important;
+  background: #fff;
+
+  &:hover {
+    background: #67c8db !important;
+  }
+
+  a {
+    display: block;
+    padding: 6px 16px !important;
+    font-size: 14px;
+    color: #666;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #666;
+      text-decoration: none;
+    }
+  }
+}
+
+.has-dropdown:hover .dropdown-content {
+  display: block;
+}
