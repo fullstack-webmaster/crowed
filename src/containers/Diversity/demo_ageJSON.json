@@ -1,0 +1,9 @@
+[
+ {"cat":"18-24 YRS","not_hired":35.398,"usb_nh":1.516,"delta":-35.398,"usb_delta":-1.516,"nothiredrem":64.602},
+ {"cat":"25-34 YRS","hired":21.926,"usb_h":1.54,"not_hired":44.686,"usb_nh":3.15,"delta":-22.76,"usb_delta":-0.892,"hiredrem":78.074,"nothiredrem":55.314},
+    {"cat":"35-44 YRS","hired":49.993,"usb_h":3.1246,"not_hired":7.592,"usb_nh":0.4745,"delta":42.401,"usb_delta":2.973,"hiredrem":50.007,"nothiredrem":92.408},
+ {"cat":"45-54 YRS","not_hired":7.011,"usb_nh":0.53,"delta":-7.011,"usb_delta":-0.53,"nothiredrem":92.989},
+ {"cat":">54 YRS","hired":28.081,"usb_h":1.3372,"not_hired":5.313,"usb_nh":0.253,"delta":22.768,"usb_delta":4.209,"hiredrem":71.919,"nothiredrem":94.687}
+
+ 
+ ]
