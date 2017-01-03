@@ -1,0 +1,18 @@
+.diversity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    a {
+      color: #333;
+      font-weight: 600;
+      cursor: pointer;
+      
+      &:active,
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
