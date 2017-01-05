@@ -1,0 +1,166 @@
+.menu-item {
+  cursor: pointer;
+
+  p {
+    text-align: center;
+  }
+}
+
+.insight-login {
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 2px solid #67c8db;
+    border-radius: 4px;
+    width: 240px;
+    text-align: center;
+    margin: 100px auto;
+
+    .username {
+      margin-bottom: 5px;
+    }
+
+    .password {
+      margin-bottom: 20px;
+    }
+
+    .error-text {
+      color: red;
+      margin-top: 10;
+      text-align: center;
+    }
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .flex1 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+
+    &:last-child {
+      .flex-table {
+        border-right: 1px solid #333;
+      }
+    }
+  }
+
+  &:last-child {
+    .flex-table {
+      border-bottom: 1px solid #333;
+    }
+  }
+}
+
+.flex-table {
+  border: 1px solid #333;
+  border-bottom: 0;
+  border-right: 0;
+  width: 100%;
+  flex-grow: 1;
+
+  .theader {
+    background: #67c8db;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    color: #fff;
+    border-bottom: 1px solid #333;
+  }
+
+  .tbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    overflow-y: scroll;
+  }
+}
+
+@keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.lds-rolling {
+  position: relative;
+}
+.lds-rolling div,
+.lds-rolling div:after {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border: 20px solid #67c8db;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+.lds-rolling div {
+  -webkit-animation: lds-rolling 1s linear infinite;
+  animation: lds-rolling 1s linear infinite;
+  top: 100px;
+  left: 100px;
+}
+.lds-rolling div:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.lds-rolling {
+  width: 48px !important;
+  height: 48px !important;
+  -webkit-transform: translate(-24px, -24px) scale(0.24) translate(24px, 24px);
+  transform: translate(-24px, -24px) scale(0.24) translate(24px, 24px);
+}
+
+.job-posts {
+  margin: 25px 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: .75em;
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 1.5;
+    color: rgb(236, 234, 234);
+    &:hover {
+      cursor: pointer;
+      color: steelblue;
+      background: aliceblue;
+      border-radius: 4px;
+    }
+
+    &.active {
+      color: #333;
+
+      &.highlight {
+        color: steelblue;
+      }
+    }
+  }
+}
